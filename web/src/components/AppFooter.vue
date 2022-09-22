@@ -33,7 +33,7 @@
   
   
   
-  <script>
+  <!-- <script>
   import { computed } from 'vue'
   
   export default {
@@ -42,7 +42,7 @@
     return { year }
   }
   }
-  </script>
+  </script> -->
   
   <style scoped>
   footer { font-size: .85em; letter-spacing: .1em; }
