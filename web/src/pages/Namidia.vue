@@ -1,19 +1,6 @@
 <template>
-  <Layout :show-logo="true">
-    <h1>Na imprensa ou
-Na mídia
-</h1>
-Descrição da página
-Modelo semelhante ao 
-https://iniciativanegra.org.br/artigos/na-midia/
-mas sem a necessidade de abrir uma nova página com descrição ao clicar na notícia
-
-Estrutura dos blocos
-Nome do veículo
-Título da notícia
-Data da publicação da notícia
-Botão Leia na íntegra
-
+  <Layout>
+    <h1 class="m-50">Na mídia</h1>
 
     <!-- Author intro -->
     <!-- <author-card :show-title="true" /> -->

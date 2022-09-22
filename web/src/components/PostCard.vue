@@ -9,13 +9,12 @@
       />
     </div>
     <div class="post-card__content">
-      <h2 class="post-card__title" v-html="post.title" />
-
-      <h3 class="post-card__title" v-html="post.nomeVeiculo" />
-      <small class="post-card__title" v-html="post.urlMateria" />
-
-      <block-content :blocks="post._rawExcerpt" />
-
+      <h1 class="post-card__title" v-html="post.title" />
+        <strong>Veículo: </strong> <small v-html="post.nomeVeiculo" />
+        <br/>
+      <strong>Fonte: </strong> <small v-html="post.urlMateria" />
+      <hr/>
+      <!-- <block-content :blocks="post._rawExcerpt" /> -->
       <post-meta class="post-card__meta" :post="post" />
       <post-tags class="post-card__tags" :post="post" />
 
@@ -65,7 +64,8 @@ export default {
   }
 
   &__title {
-    margin-top: 0;
+    text-align:left !important;
+    margin:10px 0;
   }
 
   &:hover {

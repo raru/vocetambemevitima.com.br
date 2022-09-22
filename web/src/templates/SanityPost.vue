@@ -15,7 +15,7 @@
         />
       </div>
 
-      <block-content
+      Autor: <block-content
         class="post__content"
         :blocks="$page.post._rawBody"
         v-if="$page.post._rawBody"

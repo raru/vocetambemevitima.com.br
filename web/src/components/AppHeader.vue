@@ -6,7 +6,7 @@
           <li><a href="index.html#manifesto">Conheça a Agenda </a></li>
           <li><a href="/vozes">Vozes pelo fim da guerra às drogas</a></li>
           <li><a href="/namidia">Na mídia</a></li>
-          <li><a href="#assine">Assine o manifesto</a></li>
+          <li><a href="index.html#assine">Assine o manifesto</a></li>
         </ul>
       </nav>    
     </header>
@@ -50,9 +50,9 @@
         margin-left: 2.1rem;
       }  
   
-      nav ul li a { text-decoration: none; font-size: .9em; }
+      nav ul li a { text-decoration: none; font-size: .8em; }
 
-      nav ul li a:hover { color: #78C3CE; }
+      nav ul li a:hover { color: #be78ce; }
   
   
   @media ( max-width: 767.98px ) {
