@@ -16,7 +16,7 @@ Botão Leia na íntegra
 
 
     <!-- Author intro -->
-    <author-card :show-title="true" />
+    <!-- <author-card :show-title="true" /> -->
 
     <!-- List posts -->
     <div class="posts">
@@ -50,7 +50,7 @@ Botão Leia na íntegra
           id
           title
         }
-        publishedAt(format: "D. MMMM YYYY")
+        publishedAt(format: "DD/MM/YYYY")
         _rawExcerpt
         mainImage {
           asset {
@@ -80,12 +80,12 @@ Botão Leia na íntegra
 </page-query>
 
 <script>
-import AuthorCard from '~/components/AuthorCard'
+// import AuthorCard from '~/components/AuthorCard'
 import PostCard from '~/components/PostCard'
 
 export default {
   components: {
-    AuthorCard,
+    // AuthorCard,
     PostCard
   },
   metaInfo: {
