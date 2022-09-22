@@ -43,6 +43,8 @@ Botão Leia na íntegra
       node {
         id
         title
+        nomeVeiculo
+        urlMateria                
         slug {
           current
         }
@@ -89,7 +91,7 @@ export default {
     PostCard
   },
   metaInfo: {
-    title: 'Você Também é Vítima'
+    title: 'Na Mídia - Você Também é Vítima'
   }
 }
 </script>

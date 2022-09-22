@@ -12,14 +12,15 @@
       <h2 class="post-card__title" v-html="post.title" />
 
       <h3 class="post-card__title" v-html="post.nomeVeiculo" />
-      <h4 class="post-card__title" v-html="post.urlMateria" />
+      <small class="post-card__title" v-html="post.urlMateria" />
 
       <block-content :blocks="post._rawExcerpt" />
 
       <post-meta class="post-card__meta" :post="post" />
       <post-tags class="post-card__tags" :post="post" />
 
-      <g-link class="post-card__link" :to="post.slug.current">Link</g-link>
+      <!-- <g-link class="post-card__link" :to="post.slug.current">Link</g-link> -->
+      <g-link class="post-card__link" :to="post.urlMateria">Link</g-link>
     </div>
   </div>
 </template>
