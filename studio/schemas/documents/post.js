@@ -12,6 +12,18 @@ export default {
       description: 'Titles should be catchy, descriptive, and not too long'
     },
     {
+      name: 'nomeVeiculo',
+      type: 'string',
+      title: 'Nome do veículo',
+      description: 'Nome do veículo'
+    }, 
+    {
+      name: 'urlMateria',
+      type: 'string',
+      title: 'URL materia',
+      description: 'Botão Leia na íntegra'
+    },           
+    {
       name: 'slug',
       type: 'slug',
       title: 'Slug',
@@ -39,29 +51,29 @@ export default {
       description:
         'This ends up on summary pages, on Google, when people share your post in social media.'
     },
-    // {
-    //   name: 'authors',
-    //   title: 'Authors',
-    //   type: 'array',
-    //   of: [
-    //     {
-    //       type: 'authorReference'
-    //     }
-    //   ]
-    // },
-    // {
-    //   name: 'categories',
-    //   type: 'array',
-    //   title: 'Categories',
-    //   of: [
-    //     {
-    //       type: 'reference',
-    //       to: {
-    //         type: 'category'
-    //       }
-    //     }
-    //   ]
-    // },
+    {
+      name: 'authors',
+      title: 'Authors',
+      type: 'array',
+      of: [
+        {
+          type: 'authorReference'
+        }
+      ]
+    },
+    {
+      name: 'categories',
+      type: 'array',
+      title: 'Categories',
+      of: [
+        {
+          type: 'reference',
+          to: {
+            type: 'category'
+          }
+        }
+      ]
+    },
     {
       name: 'body',
       type: 'bodyPortableText',

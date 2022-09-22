@@ -30,7 +30,7 @@
       <!-- Add comment widgets here -->
     </div>
 
-    <author-card class="post-author" />
+    <!-- RARU     <author-card class="post-author" /> -->
   </Layout>
 </template>
 
