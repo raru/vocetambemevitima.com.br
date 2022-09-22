@@ -15,3 +15,6 @@ export default function(Vue, { router, head, isClient }) {
   // Inject global image URL builder
   Vue.prototype.$urlForImage = urlForImage
 }
+
+
+

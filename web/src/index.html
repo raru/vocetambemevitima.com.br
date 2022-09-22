@@ -3,8 +3,9 @@
   <head>
     ${head}
   </head>
-  <body ${bodyAttrs}>
-    <script>
+  <body>
+  <!-- <body ${bodyAttrs}> -->
+    <!-- <script>
       // Add dark / light detection that runs before Vue.js load. Borrowed from overreacted.io
       ;(function() {
         window.__onThemeChange = function() {}
@@ -34,7 +35,7 @@
 
         setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
       })()
-    </script>
+    </script> -->
 
     ${app} ${scripts}
   </body>
