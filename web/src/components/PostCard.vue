@@ -10,6 +10,10 @@
     </div>
     <div class="post-card__content">
       <h2 class="post-card__title" v-html="post.title" />
+
+      <h3 class="post-card__title" v-html="post.nomeVeiculo" />
+      <h4 class="post-card__title" v-html="post.urlMateria" />
+
       <block-content :blocks="post._rawExcerpt" />
 
       <post-meta class="post-card__meta" :post="post" />
