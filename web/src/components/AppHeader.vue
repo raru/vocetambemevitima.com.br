@@ -50,7 +50,7 @@
         margin-left: 2.1rem;
       }  
   
-      nav ul li a { text-decoration: none; font-size: .8em; }
+      nav ul li a { text-decoration: none; font-size: .9em; }
 
       nav ul li a:hover { color: #be78ce; }
   

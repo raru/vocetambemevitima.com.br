@@ -67,6 +67,8 @@ export default {
 // h1,h2,h3,h4,h5,h6 {   font-family: 'VotorantimSans-Bold', sans-serif; font-weight: 700 !important;}
 // a:hover { opacity:.8;}
 
+
+
 .container { max-width: 1480px; margin:auto;}
 .m-50 { margin: 50px auto;}
 
