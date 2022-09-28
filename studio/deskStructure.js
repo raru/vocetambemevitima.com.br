@@ -31,6 +31,12 @@ export default () =>
         .title('Categories')
         .schemaType('category')
         .child(S.documentTypeList('category').title('Categories')),
+
+        S.listItem()
+        .title('Paginas')
+        .schemaType('page')
+        .child(S.documentTypeList('page').title('Paginas')),
+                
       // This returns an array of all the document types
       // defined in schema.js. We filter out those that we have
       // defined the structure above
