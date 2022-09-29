@@ -135,6 +135,37 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
   </Layout>
 </template>
 
+
+
+
+
+
+
+
+<page-query>
+  {
+    metadata {
+      sanityOptions {
+        projectId
+        dataset
+      }
+    }
+    posts: allSanityPost(sortBy: "publishedAt") {
+      edges {
+        node {
+          title
+          content
+        }
+      }
+    }
+  }
+  
+  </page-query>
+
+
+
+
+
 <script>
 
 export default {
