@@ -147,9 +147,6 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <script>
   
-  // sanity
-  import sanityClient from "../../sanity-config";
-  
   export default {
 
     metaInfo: {
@@ -159,14 +156,11 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
   name: "Album",
 
   setup() {
+
     onMounted(() => {
       fetchAlbum();
     })
     let album = ref([])
-
-    const {
-      params: {content, title}
-    } = useRoute()
 
     const groqAlbumQuery = `*[ _type=='page' && title == 'Pessoa Fisica'] {
                     content,
