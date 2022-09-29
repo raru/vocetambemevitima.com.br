@@ -152,8 +152,7 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 <page-query>
   {
   page {
-    tituloPagina
-    conteudoPagina
+    contentRaw
   }
 }  
 </page-query>
