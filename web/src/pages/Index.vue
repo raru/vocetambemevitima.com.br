@@ -127,13 +127,10 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 <div id="listadeassinaturas">
   <br/><br/><strong>Lista de assinaturas - X1</strong>
 
+  <h1 class="post-title__text">{{ $page.post.title }}</h1>
 
 
 
-            <h2 class="text-2xl font-bold text-blue-800 mb-2">{{ album.title }} </h2>
-
-
-  OPA
 
 </div>
 
@@ -144,31 +141,35 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 
 <script>
-    export default {
-    name: "Albums",
 
-      const groqQuery = `*[ _type=='page']{
-                      "content,
-                      title
-                      }`;
-  
-      let albums = ref([]),
+  export default {
 
-      sanityClient.fetch(groqQuery).then(
-            albumResults => {
-              albums.value = albumResults;
-            },
-            error => {
-              this.error = error;
-            }
-        );
-
-      return {
-        albums  
-      }
-  
+    metaInfo: {
+      title: 'Na Mídia - Você Também é Vítima'
+    }
   }
   </script>
+  
+
+  
+  <page-query>
+  query {
+    metadata {
+      sanityOptions {
+        projectId
+        dataset
+      }
+    }
+    page {
+      title
+      _rawBody
+      }
+  }
+  </page-query>
+
+
+
+
 
 
 <style lang="scss" >
