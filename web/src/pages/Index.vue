@@ -125,15 +125,17 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 </div>
 
 <div id="listadeassinaturas">
-  <br/><br/><strong>Lista de assinaturas (ainda vamos organizar)</strong>
+  <br/><br/><strong>Lista de assinaturas - X1</strong>
   <p v-html="page.title" />
   <p v-html="page.content" />
+  
+
+  <h1 class="post-title__text">{{ $page.page.content }}</h1>
 
   <div v-html="$static.page.content" />
 
   OPA
 
-  {{ $page.page.title }}
 </div>
 
 
@@ -149,12 +151,12 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <page-query>
   {
-    page {
-      title
-      content
-      }
+  allPage(where: {title: {eq: "Pessoa Fisica"}}) {
+    title
+    content
   }
-  </page-query>
+}  
+</page-query>
 
 
 
