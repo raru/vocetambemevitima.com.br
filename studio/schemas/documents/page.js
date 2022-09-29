@@ -4,9 +4,9 @@ export default {
   title: 'Page',
   fields: [
     {
-      name: 'title',
+      name: 'tituloPagina',
       type: 'string',
-      title: 'Title',
+      title: 'Titulo',
     },
     // {
     //   name: 'navMenu',
@@ -31,7 +31,7 @@ export default {
     //   ],
     // },
     {
-      name: 'content',
+      name: 'conteudoPagina',
       type: 'bodyPortableText',
       title: 'Conteudo'
     }    
