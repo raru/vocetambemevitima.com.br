@@ -151,8 +151,9 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <page-query>
   {
-  page {
-    contentRaw
+  page(where: {title: {eq: "Pessoa Fisica"}}) {
+    title
+    content
   }
 }  
 </page-query>
