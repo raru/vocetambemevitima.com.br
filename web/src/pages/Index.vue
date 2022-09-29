@@ -153,7 +153,6 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
   
   <page-query>
-  query Page {
 
 
 
@@ -164,14 +163,12 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
       }
     }
 
-
-
+page {
     title
-      _rawBody
+    content
 
+    }
 
-      
-  }
   </page-query>
 
 
