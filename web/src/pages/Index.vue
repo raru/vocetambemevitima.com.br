@@ -129,6 +129,8 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
   <p v-html="page.title" />
   <p v-html="page.content" />
 
+  <div v-html="$static.page.content" />
+
 </div>
 
 
@@ -150,13 +152,8 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
         dataset
       }
     }
-    posts: allSanityPost(sortBy: "publishedAt") {
-      edges {
-        node {
-          title
-          content
-        }
-      }
+    page (id: "1") {
+      content
     }
   }
   
