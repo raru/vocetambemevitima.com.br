@@ -132,7 +132,6 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
   <h1 class="post-title__text">{{ $page.page.content }}</h1>
 
-  <div v-html="$static.page.content" />
 
   OPA
 
@@ -151,7 +150,7 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <page-query>
   {
-  page(where: {title: {eq: "Pessoa Fisica"}}) {
+  page {
     title
     content
   }
