@@ -126,11 +126,11 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <div id="listadeassinaturas">
   <br/><br/><strong>Lista de assinaturas - X1</strong>
-  <p v-html="page.title" />
-  <p v-html="page.content" />
-  
 
-  <h1 class="post-title__text">{{ $page.page.content }}</h1>
+
+
+
+            <h2 class="text-2xl font-bold text-blue-800 mb-2">{{ album.title }} </h2>
 
 
   OPA
@@ -145,30 +145,50 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 
 
-
-
-
-<page-query>
-  {
-  page {
-    title
-    content
-  }
-}  
-</page-query>
-
-
-
 <script>
+  
+  // sanity
+  import sanityClient from "../../sanity-config";
+  
+  export default {
 
-export default {
-  metaInfo: {
-    title: 'Você Também é Vítima'
-  }
-  ,
-    props: {
-      post: Object
+    metaInfo: {
+      title: 'Você Também é Vítima'
+    },
+        
+  name: "Album",
+
+  setup() {
+    onMounted(() => {
+      fetchAlbum();
+    })
+    let album = ref([])
+
+    const {
+      params: {content, title}
+    } = useRoute()
+
+    const groqAlbumQuery = `*[ _type=='page' && title == 'Pessoa Fisica'] {
+                    content,
+                    title
+                    `;
+
+    function fetchAlbum() {
+      sanityClient.fetch(groqAlbumQuery).then(
+          albumResults => {
+            album.value = albumResults;
+          },
+          error => {
+            this.error = error;
+          }
+      );
     }
+
+
+    return {
+      album    }
+  }
+
 }
 </script>
 
