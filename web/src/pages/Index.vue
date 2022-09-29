@@ -152,14 +152,13 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
         dataset
       }
     }
-    page (id: "2ff53e2d-7350-4067-84cf-9abed06ca88d") {
-      content
-    }
+    page {
+    title
+    content
+  }
   }
   
   </page-query>
-
-
 
 
 
