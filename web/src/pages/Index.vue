@@ -143,49 +143,32 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 
 
-
-
 <script>
+    export default {
+    name: "Albums",
+
+      const groqQuery = `*[ _type=='page']{
+                      "content,
+                      title
+                      }`;
   
-  export default {
+      let albums = ref([]),
 
-    metaInfo: {
-      title: 'Você Também é Vítima'
-    },
-        
-  name: "Album",
+      sanityClient.fetch(groqQuery).then(
+            albumResults => {
+              albums.value = albumResults;
+            },
+            error => {
+              this.error = error;
+            }
+        );
 
-  setup() {
-
-    onMounted(() => {
-      fetchAlbum();
-    })
-    let album = ref([])
-
-    const groqAlbumQuery = `*[ _type=='page' && title == 'Pessoa Fisica'] {
-                    content,
-                    title
-                    `;
-
-    function fetchAlbum() {
-      sanityClient.fetch(groqAlbumQuery).then(
-          albumResults => {
-            album.value = albumResults;
-          },
-          error => {
-            this.error = error;
-          }
-      );
-    }
-
-
-    return {
-      album    }
+      return {
+        albums  
+      }
+  
   }
-
-}
-</script>
-
+  </script>
 
 
 <style lang="scss" >
