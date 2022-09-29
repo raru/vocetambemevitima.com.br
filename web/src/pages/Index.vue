@@ -131,6 +131,9 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
   <div v-html="$static.page.content" />
 
+  OPA
+
+  {{ $page.page.title }}
 </div>
 
 
@@ -146,18 +149,11 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <page-query>
   {
-    metadata {
-      sanityOptions {
-        projectId
-        dataset
-      }
-    }
     page {
-    title
-    content
+      title
+      content
+      }
   }
-  }
-  
   </page-query>
 
 
