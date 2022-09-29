@@ -126,6 +126,9 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 <div id="listadeassinaturas">
   <br/><br/><strong>Lista de assinaturas (ainda vamos organizar)</strong>
+  <p v-html="page.title" />
+  <p v-html="page.content" />
+
 </div>
 
 
@@ -138,8 +141,13 @@ export default {
   metaInfo: {
     title: 'Você Também é Vítima'
   }
+  ,
+    props: {
+      post: Object
+    }
 }
 </script>
+
 
 
 <style lang="scss" >
