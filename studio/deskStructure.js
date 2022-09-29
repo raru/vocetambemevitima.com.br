@@ -33,9 +33,9 @@ export default () =>
       //   .child(S.documentTypeList('category').title('Categories')),
 
         S.listItem()
-        .title('Assinaturas - Pessoa Fisica')
+        .title('Assinaturas')
         .schemaType('page')
-        .child(S.documentTypeList('page').title('Assinaturas - Pessoa Fisica')),
+        .child(S.documentTypeList('page').title('Assinaturas')),
       
         
       // This returns an array of all the document types
