@@ -1,9 +1,9 @@
 <template>
   <Layout>
-<section class="container" style="max-width: 60vw;">
+<section class="container" style="max-width: 60vw;text-align: center;">
 <h1 class="m-50">Vozes pelo fim da guerra às drogas</h1>
 <!-- SnapWidget -->
-<iframe src="https://snapwidget.com/embed/1011204" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; width: 100%; overflow: visible; "></iframe>
+<iframe src="https://snapwidget.com/embed/1011204" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; width: 80%; overflow: visible; margin:auto;"></iframe>
 </section>
     </Layout>
 </template>

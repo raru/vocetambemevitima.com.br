@@ -6,11 +6,12 @@
   <br/>
             <br/>
 
-            <strong>Links para visualizar o texto em inglês e espanhol</strong>
 
             <br/><br/>
 <span id="manifesto"></span>
 <h1>Agenda Emergencial pelo fim da Guerra às Drogas no Brasil</h1>
+<center><strong><a href="#">english</a> | <a href="#">spanish</a> </strong></center>
+
 <p><br/>
 Chegou o momento da Plataforma Brasileira de Políticas sobre Drogas, a partir de sua rede de organizações membras, conselheiros consultivos e parceiros, e em parceria com a Iniciativa Negra por Uma Nova Política sobre Drogas, lançar ao mais amplo público a Agenda Emergencial pelo Fim da Guerra às Drogas no Brasil. <br/>
 <br/>
@@ -108,6 +109,7 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
                     Organizações
 
                 </a>
+
                 
                 <br/>
                 
@@ -121,18 +123,40 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
  
                 </a>
 
-</div>
-</div>
+                
+                
 
-<div id="listadeassinaturas">
-  <br/><br/><strong>Lista de assinaturas - X1</strong>
-
-  <h1 class="post-title__text">{{ $page.post.title }}</h1>
-
-
-
+         
 
 </div>
+
+
+<div id="botoes">
+
+
+
+<a 
+    class=link-assinou
+    href="#"
+    rel="nofollow"
+    target="_blank"
+>
+    Veja organizações que assinaram
+</a>
+
+<a 
+    class=link-assinou
+    href="#"
+    rel="nofollow"
+    target="_blank"
+>
+    Veja quem já assinou
+</a>
+                
+</div>
+
+</div>
+
 
 
   </Layout>
@@ -140,39 +164,13 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 
 
+
+
 <script>
-
   export default {
-
-    metaInfo: {
-      title: 'Na Mídia - Você Também é Vítima'
-    }
+    metaInfo: {      title: 'Você Também é Vítima'    }
   }
-  </script>
-  
-
-  
-  <page-query>
-
-
-
-    metadata {
-      sanityOptions {
-        projectId
-        dataset
-      }
-    }
-
-page {
-    title
-    content
-
-    }
-
-  </page-query>
-
-
-
+</script>
 
 
 
@@ -187,6 +185,30 @@ page {
 
 
 .header-image {    width: 100%; }
+
+
+.link-assinou {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #d9ef0e !important;
+    margin-top: 8px;
+    text-decoration: none;
+    /* background: #d9ef0e; */
+    width: 300px;
+    float: left;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
   
 
           @media screen and (max-width: 760px) and (min-width: 0px) {

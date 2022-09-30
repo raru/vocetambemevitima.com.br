@@ -1,6 +1,6 @@
 export default {
-  type: 'document',
   name: 'page',
+  type: 'document',
   title: 'Page',
   fields: [
     {
@@ -8,6 +8,15 @@ export default {
       type: 'string',
       title: 'Title',
     },
+    {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      option: {
+        source: 'title',
+        maxLenght: 96
+      }
+    },    
     // {
     //   name: 'navMenu',
     //   type: 'reference',
@@ -32,7 +41,7 @@ export default {
     // },
     {
       name: 'content',
-      type: 'bodyPortableText',
+      type: 'text',
       title: 'Conteudo'
     }    
   ],
