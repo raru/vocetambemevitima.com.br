@@ -4,7 +4,7 @@
 
     <div>
 
-      <p v-for="edge in $page.allSanityPage.edges" > {{ edge.node.title }}</p>
+      <p v-for="edge in $page.allSanityPage.edges" > {{ edge.node.titulo }}</p>
       <hr/>
       <!-- <p v-for="edge in $page.allSanityPage.edges" > {{ edge.node._rawContent }}</p> -->
     </div>
@@ -17,7 +17,7 @@
       allSanityPage {
         edges {
           node {
-            title
+            titulo
           }
         }
       }
