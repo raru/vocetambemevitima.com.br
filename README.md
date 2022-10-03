@@ -9,7 +9,7 @@ Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-i
 - A fast by default blog with [Gridsome](https://gridsome.org)
 - Structured content using [Sanity.io](https://www.sanity.io)
 - Global deployment on [Netlify](https://netlify.com)
-
+  
 ## Quick start
 
 1. Clone this repository
