@@ -1,13 +1,13 @@
 <template>
   <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
-    <div class="post-card__header">
+    <!-- <div class="post-card__header">
       <g-image
         alt="Cover image"
         v-if="post.mainImage"
         class="post-card__image"
         :src="$urlForImage(post.mainImage, $page.metadata.sanityOptions).height(440).width(800).auto('format').url()"
       />
-    </div>
+    </div> -->
     <div class="post-card__content">
       <h1 class="post-card__title" v-html="post.title" />
         <strong>Veículo: </strong> <small v-html="post.nomeVeiculo" />
@@ -15,8 +15,8 @@
       <strong>Fonte: </strong> <small v-html="post.urlMateria" />
       <hr/>
       <!-- <block-content :blocks="post._rawExcerpt" /> -->
-      <post-meta class="post-card__meta" :post="post" />
-      <post-tags class="post-card__tags" :post="post" />
+      <!-- <post-meta class="post-card__meta" :post="post" /> -->
+      <!-- <post-tags class="post-card__tags" :post="post" /> -->
 
       <!-- <g-link class="post-card__link" :to="post.slug.current">Link</g-link> -->
       <g-link class="post-card__link" :to="post.urlMateria">Link</g-link>
@@ -25,14 +25,14 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
+// import PostMeta from '~/components/PostMeta'
+// import PostTags from '~/components/PostTags'
 import BlockContent from '~/components/BlockContent'
 
 export default {
   components: {
-    PostMeta,
-    PostTags,
+    // PostMeta,
+    // PostTags,
     BlockContent
   },
   props: {
