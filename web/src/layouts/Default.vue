@@ -52,13 +52,13 @@ export default {
 
 // @font-face {
 //   font-family: VotorantimSans-Regular;
-//   src: url("./assets/images/fonts/VotorantimSans-Regular.ttf") format("opentype");
+//   src: url("../assets/images/fonts/VotorantimSans-Regular.ttf") format("opentype");
 // }
 
 // @font-face {
 //   font-family: VotorantimSans-Bold;
 //   font-weight: bold;
-//   src: url("./assets/images/fonts/VotorantimSans-Bold.ttf") format("opentype");
+//   src: url("../assets/images/fonts/VotorantimSans-Bold.ttf") format("opentype");
 // }
 
 // * {padding: 0; margin: 0}
@@ -73,7 +73,7 @@ export default {
 .m-50 { margin: 50px auto;}
 
 footer {
-    background: #fff url(./assets/images/INNPD+PBPD_Keyvisual_BKG-HEADER.png) no-repeat top center /cover;
+    background: #fff url(../assets/images/INNPD+PBPD_Keyvisual_BKG-HEADER.png) no-repeat top center /cover;
  
     padding: 2%;
     display: flex;    
@@ -120,7 +120,7 @@ footer {
                     text-align: center;
             }
             .content {
-                /*background:#fff url(./assets/images/INNPD+PBPD_Keyvisual_BKG-BOX.png) no-repeat top center /cover;*/
+                /*background:#fff url(../assets/images/INNPD+PBPD_Keyvisual_BKG-BOX.png) no-repeat top center /cover;*/
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -188,7 +188,7 @@ box-sizing: border-box;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-background: #fff url(./assets/images/INNPD+PBPD_Keyvisual_BKG-HEADER.png) no-repeat top center /cover;
+background: #fff url(../assets/images/INNPD+PBPD_Keyvisual_BKG-HEADER.png) no-repeat top center /cover;
             }
             
     
