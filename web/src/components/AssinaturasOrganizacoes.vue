@@ -31,5 +31,6 @@
 
 .v--modal p {
     font-size: 9px !important;
+    color: #fff; 
 }
 </style>

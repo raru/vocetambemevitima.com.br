@@ -145,6 +145,13 @@ class=link-assinou
     Veja quem já assinou
 </a>
 
+
+
+</div>
+
+</div>
+
+
 <modal name="modalAssinouPessoaFisica"
          :width="800"
          :height="600"
@@ -155,13 +162,6 @@ class=link-assinou
          :height="600"
          shiftY="0.9"
          >  <assinaturas-organizacoes />      </modal>
-
-</div>
-
-</div>
-
-
-
 
   </Layout>
 </template>
