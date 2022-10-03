@@ -203,7 +203,7 @@ export default {
       name: 'modalAssinouOrganizacoes'    
     },
     mounted() {
-        this.$modal.hide('modalAssinouOrganizacoes')
+        $modal.hide('modalAssinouOrganizacoes')
     }
   }
   </script>
