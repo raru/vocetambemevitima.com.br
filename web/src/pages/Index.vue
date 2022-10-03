@@ -10,9 +10,9 @@
             <br/><br/>
 <span id="manifesto"></span>
 <h1>Agenda Emergencial pelo fim da Guerra às Drogas no Brasil</h1>
-<center><strong><a href="#">english</a> | <a href="#">spanish</a> </strong></center>
+<center><strong><a href="#" v-on:click="isHidden = !isHidden">english</a> | <a href="#">spanish</a> </strong></center>
 
-<p><br/>
+<p v-if="!isHidden"><br/>
 Chegou o momento da Plataforma Brasileira de Políticas sobre Drogas, a partir de sua rede de organizações membras, conselheiros consultivos e parceiros, e em parceria com a Iniciativa Negra por Uma Nova Política sobre Drogas, lançar ao mais amplo público a Agenda Emergencial pelo Fim da Guerra às Drogas no Brasil. <br/>
 <br/>
 Neste momento de disputa eleitoral das instituições democráticas no país, nos posicionamos pela interrupção imediata da opção de guerra que tem tido como consequências o super encarceramento de pessoas pretas e a criminalização de territórios empobrecidos do norte ao sul do Brasil. A guerra tem que parar já! <br/>
@@ -177,7 +177,25 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
   
     // metaInfo: {      title: 'Você Também é Vítima'    }
 
-  export default {
+//   export default {
+//     components: {
+//       AssinaturasOrganizacoes,
+//       AssinaturasPessoas,
+//       name: 'modalAssinouPessoaFisica',
+//       name: 'modalAssinouOrganizacoes'    
+//     },
+//     mounted() {
+//       this.$modal.hide('modalAssinouOrganizacoes'),
+//       this.$modal.hide('modalAssinouPessoaFisica')
+//     } 
+// }
+
+export default {
+    data() {
+      return {
+        isHidden: false
+      }
+    },
     components: {
       AssinaturasOrganizacoes,
       AssinaturasPessoas,
@@ -185,11 +203,9 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
       name: 'modalAssinouOrganizacoes'    
     },
     mounted() {
-      this.$modal.hide('modalAssinouOrganizacoes'),
-      this.$modal.hide('modalAssinouPessoaFisica')
+        this.$modal.hide('modalAssinouOrganizacoes')
     }
-}
-
+  }
   </script>
 
 
