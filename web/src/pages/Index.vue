@@ -123,39 +123,43 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
  
                 </a>
 
-                
-                
-
-         
-
 </div>
 
 
 <div id="botoes">
-
-
-
 <a 
-    class=link-assinou
-    href="#"
+class=link-assinou
     rel="nofollow"
-    target="_blank"
+    href="#" 
+    @click.prevent="$modal.show('modalAssinouOrganizacoes')"
 >
     Veja organizações que assinaram
 </a>
 
 <a 
     class=link-assinou
-    href="#"
     rel="nofollow"
-    target="_blank"
+    href="#" 
+    @click.prevent="$modal.show('modalAssinouPessoaFisica')"
 >
     Veja quem já assinou
 </a>
-                
+
+<modal name="modalAssinouPessoaFisica"
+         :width="800"
+         :height="600"
+         shiftY="0.8"
+         >  <assinaturas-pessoas />    </modal>
+<modal name="modalAssinouOrganizacoes"
+         :width="800"
+         :height="600"
+         shiftY="0.9"
+         >  <assinaturas-organizacoes />      </modal>
+
 </div>
 
 </div>
+
 
 
 
@@ -164,13 +168,31 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
 
 
 
-
-
 <script>
+
+import AssinaturasOrganizacoes from '~/components/AssinaturasOrganizacoes.vue'
+import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
+  
+    // metaInfo: {      title: 'Você Também é Vítima'    }
+
   export default {
-    metaInfo: {      title: 'Você Também é Vítima'    }
-  }
-</script>
+    components: {
+      AssinaturasOrganizacoes,
+      AssinaturasPessoas,
+      name: 'modalAssinouPessoaFisica',
+      name: 'modalAssinouOrganizacoes'
+    }
+}
+
+  </script>
+
+
+
+
+
+
+
+
 
 
 
@@ -208,6 +230,7 @@ As múltiplas ações capazes de fortalecer a formação, execução, fiscaliza�
     border-radius: 10px;
     text-align: center;
 }
+
 
   
 
