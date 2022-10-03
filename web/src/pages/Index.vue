@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
 
-  <center><img alt="Você também é vítima" src="../assets/images/headersite.png" class="logo"></center>
+  <center><img alt="Você também é vítima" src="./assets/images/headersite.png" class="logo"></center>
 
   <br/>
             <br/>
@@ -145,6 +145,13 @@ class=link-assinou
     Veja quem já assinou
 </a>
 
+
+
+</div>
+
+</div>
+
+
 <modal name="modalAssinouPessoaFisica"
          :width="800"
          :height="600"
@@ -155,13 +162,6 @@ class=link-assinou
          :height="600"
          shiftY="0.9"
          >  <assinaturas-organizacoes />      </modal>
-
-</div>
-
-</div>
-
-
-
 
   </Layout>
 </template>
