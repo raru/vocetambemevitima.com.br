@@ -183,8 +183,8 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
       name: 'modalAssinouOrganizacoes',
       
     mount () {        
-      $modal.hide('modalAssinouPessoaFisica'),
-      $modal.hide('modalAssinouPessoaFisica')
+      this.$modal.hide('modalAssinouPessoaFisica'),
+      this.$modal.hide('modalAssinouPessoaFisica')
      }      
     }
 }
