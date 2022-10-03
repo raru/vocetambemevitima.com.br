@@ -11,10 +11,10 @@
     "@sanity/image-url": "^1.0.1",
     "dotenv": "^10.0.0",
     "gridsome": "^0.7.23",
+    "gridsome-plugin-modal": "^0.1.1",
     "gridsome-source-sanity": "^1.1.0",
     "sanity-blocks-vue-component": "^0.1.0",
-    "sharp": "^0.29.1",
-    "gridsome-plugin-modal": "^0.1.1"
+    "sharp": "^0.29.1"
   },
   "devDependencies": {
     "sass": "^1.42.1",
