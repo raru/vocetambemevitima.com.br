@@ -152,13 +152,13 @@ class=link-assinou
 </div>
 
 
-<modal name="modalAssinouPessoaFisica"
+<modal class="modalAssina" name="modalAssinouPessoaFisica"
 v-model="hide"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal name="modalAssinouOrganizacoes"
+<modal class="modalAssina" name="modalAssinouOrganizacoes"
 v-model="hide"
          :width="800"
          :height="600"
@@ -182,7 +182,11 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
       AssinaturasOrganizacoes,
       AssinaturasPessoas,
       name: 'modalAssinouPessoaFisica',
-      name: 'modalAssinouOrganizacoes'    
+      name: 'modalAssinouOrganizacoes',
+    mounted() {        
+      this.$modal.hide('modalAssinouOrganizacoes'),
+      this.$modal.hide('modalAssinouPessoaFisica')
+     }      
     }
 }
 
@@ -261,5 +265,10 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
     font-size: 9px !important;
     color: #fff; 
 }
+
+
+.modalAssina { display: none;}
+
+
 
 </style>
