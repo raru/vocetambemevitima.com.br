@@ -255,19 +255,19 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
 
 
 
-          h2 { color: #d7ee01; font-size: 18px;}
-  .v--modal {
-    background-color: #3b2650;
+h2 { color: #d7ee01; font-size: 18px !important;}
+
+.v--modal {
+    background-color: #3b2650 !important;
     overflow-y: scroll !important;
 }
 
 .v--modal p {
     font-size: 9px !important;
-    color: #fff; 
+    color: #fff !important; 
 }
 
 
-.modalAssina { display: none;}
 
 
 
