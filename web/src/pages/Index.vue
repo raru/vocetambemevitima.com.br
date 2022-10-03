@@ -180,7 +180,12 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
       AssinaturasOrganizacoes,
       AssinaturasPessoas,
       name: 'modalAssinouPessoaFisica',
-      name: 'modalAssinouOrganizacoes'
+      name: 'modalAssinouOrganizacoes',
+      
+    mount () {        
+      $modal.hide('modalAssinouPessoaFisica'),
+      $modal.hide('modalAssinouPessoaFisica')
+     }      
     }
 }
 
