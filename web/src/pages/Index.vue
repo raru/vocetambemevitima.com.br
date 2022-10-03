@@ -153,11 +153,13 @@ class=link-assinou
 
 
 <modal name="modalAssinouPessoaFisica"
+v-model="hide"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
 <modal name="modalAssinouOrganizacoes"
+v-model="hide"
          :width="800"
          :height="600"
          shiftY="0.9"
@@ -180,12 +182,7 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
       AssinaturasOrganizacoes,
       AssinaturasPessoas,
       name: 'modalAssinouPessoaFisica',
-      name: 'modalAssinouOrganizacoes',
-      
-    mounted() {        
-      this.$modal.hide('modalAssinouPessoaFisica'),
-      this.$modal.hide('modalAssinouPessoaFisica')
-     }      
+      name: 'modalAssinouOrganizacoes'    
     }
 }
 
