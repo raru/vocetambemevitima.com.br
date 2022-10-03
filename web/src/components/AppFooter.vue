@@ -1,8 +1,8 @@
 <template>
     <footer class="bg-gray text-left lg:p-6">
         <div style="width:50%;"><br/>
-            <img src="../assets/images/logo_IN.png" height="75px" />
-            <img src="../assets/images/logo-pbpd.png" height="75px" />
+            <img src="./assets/images/logo_IN.png" height="75px" />
+            <img src="./assets/images/logo-pbpd.png" height="75px" />
             </div>
             <div style="width:50%;vertical-align: middle;text-align: right;">
 <strong>Iniciativa Negra</strong><br/>

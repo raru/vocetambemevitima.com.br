@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
 
-  <center><img alt="Você também é vítima" src="../assets/images/headersite.png" class="logo"></center>
+  <center><img alt="Você também é vítima" src="./assets/images/headersite.png" class="logo"></center>
 
   <br/>
             <br/>
