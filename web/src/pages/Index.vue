@@ -58,7 +58,7 @@
 class=link-assinou
     rel="nofollow"
     href="#" 
-    @click.prevent="$modal.show('modalAssinouOrganizacoes')"
+    @click="$modal.show('modalAssinouOrganizacoes')"
 >
     Veja organizações que assinaram
 </a>
@@ -67,7 +67,7 @@ class=link-assinou
     class=link-assinou
     rel="nofollow"
     href="#" 
-    @click.prevent="$modal.close('modalAssinouPessoaFisica')"
+    @click="$modal.show('modalAssinouPessoaFisica')"
 >
     Veja quem já assinou
 </a>
@@ -78,7 +78,7 @@ class=link-assinou
 
 </div>
 
-
+<div style="opacity: 0;">
 <modal class="modalAssina" name="modalAssinouPessoaFisica"
          :width="800"
          :height="600"
@@ -89,6 +89,7 @@ class=link-assinou
          :height="600"
          shiftY="0.9"
          >  <assinaturas-organizacoes />      </modal>
+</div>         
 
   </Layout>
 </template>
@@ -155,6 +156,8 @@ export default {
 
     beforeOpen (event) {
       console.log('Opening...')
+      this.$modal.hide('modalAssinouPessoaFisica')
+      $modal.hideAll()
       event.cancel()
     }
 
