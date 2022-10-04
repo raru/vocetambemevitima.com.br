@@ -164,13 +164,13 @@ class=link-assinou
 
 
 <modal class="modalAssina" name="modalAssinouPessoaFisica"
-v-model="hide"
+v-model="modalShow"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes"
-v-model="hide"
+<modal class="modalAssina" name="modalAssinouOrganizacoes" 
+v-model="modalShow"
          :width="800"
          :height="600"
          shiftY="0.9"
@@ -204,7 +204,8 @@ import AssinaturasPessoas from '~/components/AssinaturasPessoas.vue'
 export default {
     data() {
       return {
-        isHidden: false
+        isHidden: false,
+        modalShow: false
       }
     },
     components: {
@@ -215,7 +216,8 @@ export default {
     },
   methods: {
     hideModal () {
-      this.$modal.hideAll()
+            this.$modal.hide('modalAssinouOrganizacoes'),
+      this.$modal.hide('modalAssinouPessoaFisica')
     },    
     mounted() {
   this.hideModal();
