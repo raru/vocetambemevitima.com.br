@@ -78,18 +78,16 @@ class=link-assinou
 
 </div>
 
-<div style="opacity: 0;">
-<modal class="modalAssina" name="modalAssinouPessoaFisica"
+<modal class="modalAssina" name="modalAssinouPessoaFisica" @before-open="beforeOpen" 
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes" 
+<modal class="modalAssina" name="modalAssinouOrganizacoes" @before-open="beforeOpen" 
          :width="800"
          :height="600"
          shiftY="0.9"
          >  <assinaturas-organizacoes />      </modal>
-</div>         
 
   </Layout>
 </template>
