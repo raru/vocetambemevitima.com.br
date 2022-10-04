@@ -132,6 +132,11 @@ export default {
       name: 'modalAssinouOrganizacoes'    
     },
 
+    mounted() {
+      console.log('Opening...')
+      this.$modal.hide('modalAssinouPessoaFisica')
+      this.$modal.hide('modalAssinouOrganizacoes')      
+    },
 
   methods: {
     pt(event) {
@@ -151,13 +156,7 @@ export default {
       this.portugues = false 
       this.english = false 
       this.spanish = true 
-    },
-
-    mounted() {
-      console.log('Opening...')
-      this.$modal.hide('modalAssinouPessoaFisica')
-      this.$modal.hide('modalAssinouOrganizacoes')      
-    },
+    }
 
             
   }
