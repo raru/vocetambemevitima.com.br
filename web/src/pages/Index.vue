@@ -143,7 +143,7 @@ export default {
       this.english = false 
       this.spanish = true 
     },
-    mounted() {
+    beforeMount() {
       $modal.hide('modalAssinouOrganizacoes')
       $modal.hide('modalAssinouPessoaFisica')
         }
