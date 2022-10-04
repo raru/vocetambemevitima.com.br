@@ -78,12 +78,12 @@ class=link-assinou
 
 </div>
 
-<modal class="modalAssina" name="modalAssinouPessoaFisica" v-show="isShowModal"
+<modal class="modalAssina" name="modalAssinouPessoaFisica" 
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes" v-show="isShowModal"
+<modal class="modalAssina" name="modalAssinouOrganizacoes" 
          :width="800"
          :height="600"
          shiftY="0.9"
@@ -118,7 +118,7 @@ export default {
     data() {
       return {
         // isHidden: false,
-        isShowModal: false,
+        // isShowModal: false,
         portugues: true,
         english: false,
 				spanish: false  
@@ -131,12 +131,6 @@ export default {
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
     },
-
-    // mounted() {
-    //   console.log('Opening...')
-    //   this.$modal.hide('modalAssinouPessoaFisica')
-    //   this.$modal.hide('modalAssinouOrganizacoes')      
-    // },
 
   methods: {
     pt(event) {
@@ -156,18 +150,15 @@ export default {
       this.portugues = false 
       this.english = false 
       this.spanish = true 
-    },
+    }    
+  },
 
-beforeOpen (event) {
-  console.log('Opening...')
-  this.isShowModal = true 
-  this.$modal.hide('modalAssinouPessoaFisica')
-  this.$modal.hide('modalAssinouOrganizacoes')
-  event.cancel()
-}
+  mounted() {
+      console.log('Opening...')
+      this.$modal.hide('modalAssinouPessoaFisica')
+      this.$modal.hide('modalAssinouOrganizacoes')      
+    }
 
-            
-  }
 }
   
   </script>
