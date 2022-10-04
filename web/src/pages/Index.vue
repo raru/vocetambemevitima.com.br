@@ -154,7 +154,7 @@ export default {
     },
 
     mounted() {
-      this.$modal.hideAll();
+      this.$modal.hide('modalAssinouPessoaFisica');
         }    
 }
   
