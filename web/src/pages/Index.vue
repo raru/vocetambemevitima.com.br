@@ -78,12 +78,12 @@ class=link-assinou
 
 </div>
 
-<modal class="modalAssina" name="modalAssinouPessoaFisica" @before-open="beforeOpen" 
+<modal class="modalAssina" name="modalAssinouPessoaFisica" @opened="opened" 
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes" @before-open="beforeOpen" 
+<modal class="modalAssina" name="modalAssinouOrganizacoes" @opened="opened" 
          :width="800"
          :height="600"
          shiftY="0.9"
@@ -152,10 +152,10 @@ export default {
       this.spanish = true 
     },
 
-    beforeOpen (event) {
+    opened (event) {
       console.log('Opening...')
-      $modal.hide('modalAssinouPessoaFisica')
-      $modal.hide('modalAssinouOrganizacoes')
+      this.$modal.hide('modalAssinouPessoaFisica')
+      this.$modal.hide('modalAssinouOrganizacoes')
       event.cancel()
     }
 
