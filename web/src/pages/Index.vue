@@ -81,7 +81,8 @@ class=link-assinou
 
 <modal class="modalAssina" name="modalAssinouPessoaFisica"
          :width="800"
-         :height="600"
+         :height="auto"
+         :scrollable="true"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
 <modal class="modalAssina" name="modalAssinouOrganizacoes" 
@@ -143,7 +144,14 @@ export default {
       this.portugues = false 
       this.english = false 
       this.spanish = true 
-    }
+    },
+
+    beforeOpen (event) {
+      console.log('Opening...')
+      event.cancel()
+    },
+
+            
   },
 
   components: {
@@ -151,11 +159,7 @@ export default {
       AssinaturasPessoas,
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
-    },
-
-    mounted() {
-      this.$modal.hide('modalAssinouPessoaFisica');
-        }    
+    }
 }
   
   </script>
