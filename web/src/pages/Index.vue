@@ -67,7 +67,7 @@ class=link-assinou
     class=link-assinou
     rel="nofollow"
     href="#" 
-    @click.prevent="$modal.show('modalAssinouPessoaFisica')"
+    @click.prevent="$modal.hide('modalAssinouPessoaFisica')"
 >
     Veja quem já assinou
 </a>
@@ -154,10 +154,7 @@ export default {
     },
 
     mounted() {
-      this.hideModal('modalAssinouOrganizacoes');
-      // this.$modal.hide();
-      // $modal.hide('modalAssinouOrganizacoes');
-      // this.$modal.hide('modalAssinouPessoaFisica');
+      this.$modal.hideAll();
         }    
 }
   
