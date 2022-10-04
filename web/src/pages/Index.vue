@@ -164,13 +164,13 @@ class=link-assinou
 
 
 <modal class="modalAssina" name="modalAssinouPessoaFisica"
-v-model="modalShow"
+:v-model="modalShow" v-if="isHidden"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
 <modal class="modalAssina" name="modalAssinouOrganizacoes" 
-v-model="modalShow"
+:v-model="modalShow" v-if="isHidden"
          :width="800"
          :height="600"
          shiftY="0.9"
