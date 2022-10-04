@@ -67,7 +67,7 @@ class=link-assinou
     class=link-assinou
     rel="nofollow"
     href="#" 
-    @click.prevent="$modal.hide('modalAssinouPessoaFisica')"
+    @click.prevent="$modal.close('modalAssinouPessoaFisica')"
 >
     Veja quem já assinou
 </a>
@@ -131,7 +131,7 @@ export default {
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
     },
-        
+
 
   methods: {
     pt(event) {
