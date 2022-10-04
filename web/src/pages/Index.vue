@@ -78,12 +78,12 @@ class=link-assinou
 
 </div>
 
-<modal class="modalAssina" name="modalAssinouPessoaFisica" v-if="isShowModal"
+<modal class="modalAssina" name="modalAssinouPessoaFisica" v-show="isShowModal"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes" v-if="isShowModal"
+<modal class="modalAssina" name="modalAssinouOrganizacoes" v-show="isShowModal"
          :width="800"
          :height="600"
          shiftY="0.9"
