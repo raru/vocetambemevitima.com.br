@@ -132,11 +132,11 @@ export default {
       name: 'modalAssinouOrganizacoes'    
     },
 
-    mounted() {
-      console.log('Opening...')
-      this.$modal.hide('modalAssinouPessoaFisica')
-      this.$modal.hide('modalAssinouOrganizacoes')      
-    },
+    // mounted() {
+    //   console.log('Opening...')
+    //   this.$modal.hide('modalAssinouPessoaFisica')
+    //   this.$modal.hide('modalAssinouOrganizacoes')      
+    // },
 
   methods: {
     pt(event) {
@@ -156,7 +156,15 @@ export default {
       this.portugues = false 
       this.english = false 
       this.spanish = true 
-    }
+    },
+
+beforeOpen (event) {
+  console.log('Opening...')
+  this.isShowModal = true 
+  this.$modal.hide('modalAssinouPessoaFisica')
+  this.$modal.hide('modalAssinouOrganizacoes')
+  event.cancel()
+}
 
             
   }
