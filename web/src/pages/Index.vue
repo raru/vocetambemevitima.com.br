@@ -124,6 +124,11 @@ export default {
 					    spanish: false  
       }
     },
+    mounted() {
+      this.$modal.hide('modalAssinouOrganizacoes')
+      this.$modal.hide('modalAssinouPessoaFisica')
+        },
+            
   methods: {
     pt(event) {
       alert(`portugues`)
@@ -142,11 +147,7 @@ export default {
       this.portugues = false 
       this.english = false 
       this.spanish = true 
-    },
-    beforeMount() {
-      $modal.hide('modalAssinouOrganizacoes')
-      $modal.hide('modalAssinouPessoaFisica')
-        }
+    }
   },
   components: {
       AssinaturasOrganizacoes,
