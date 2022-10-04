@@ -81,8 +81,7 @@ class=link-assinou
 
 <modal class="modalAssina" name="modalAssinouPessoaFisica"
          :width="800"
-         :height="auto"
-         :scrollable="true"
+         :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
 <modal class="modalAssina" name="modalAssinouOrganizacoes" 
@@ -126,6 +125,14 @@ export default {
       }
     },
 
+    components: {
+      AssinaturasOrganizacoes,
+      AssinaturasPessoas,
+      name: 'modalAssinouPessoaFisica',
+      name: 'modalAssinouOrganizacoes'    
+    },
+        
+
   methods: {
     pt(event) {
       alert(`portugues`)
@@ -149,17 +156,10 @@ export default {
     beforeOpen (event) {
       console.log('Opening...')
       event.cancel()
-    },
+    }
 
             
-  },
-
-  components: {
-      AssinaturasOrganizacoes,
-      AssinaturasPessoas,
-      name: 'modalAssinouPessoaFisica',
-      name: 'modalAssinouOrganizacoes'    
-    }
+  }
 }
   
   </script>
