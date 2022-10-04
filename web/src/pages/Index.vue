@@ -118,7 +118,7 @@ export default {
     data() {
       return {
         // isHidden: false,
-        isShowModal: true,
+        isShowModal: false,
         portugues: true,
         english: false,
 				spanish: false  
