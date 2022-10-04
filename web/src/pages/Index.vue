@@ -10,11 +10,18 @@
             <br/><br/>
 <span id="manifesto"></span>
 <h1>Agenda Emergencial pelo fim da Guerra às Drogas no Brasil</h1>
-<center><strong><a href="#" v-on:click="type === A">english</a> | <a href="#">spanish</a> </strong></center>
+<center><strong><a href="#" v-on:click="ok">english</a> | <a href="#">spanish</a> </strong></center>
 
-<div v-if="type === 'A'"> A </div>
-<div v-if="type === 'A'"> B </div>
-<div v-if="type === 'A'"> C </div>
+<div  v-if="ok"> AAAAAAAA </div>
+<div v-if="type === B"> B </div>
+<div v-if="type === C"> C </div>
+
+
+<h1 v-if="awesome">Vue is awesome!</h1>
+
+
+<h1 v-show="ok">Hello!</h1>
+
 
 <p><br/>
 Chegou o momento da Plataforma Brasileira de Políticas sobre Drogas, a partir de sua rede de organizações membras, conselheiros consultivos e parceiros, e em parceria com a Iniciativa Negra por Uma Nova Política sobre Drogas, lançar ao mais amplo público a Agenda Emergencial pelo Fim da Guerra às Drogas no Brasil. <br/>
@@ -206,10 +213,15 @@ export default {
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
     },
-    mounted () {
-        this.$modal.hideAll()
-    }
-  }
+  methods: {
+    hideModal () {
+      this.$modal.hideAll()
+    },    
+    mounted() {
+  this.hideModal();
+}
+  }}
+  
   </script>
 
 
