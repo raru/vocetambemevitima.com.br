@@ -154,7 +154,12 @@ export default {
       AssinaturasPessoas,
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
-    }
+    },
+
+    mounted() {
+      this.$modal.hide('modalAssinouOrganizacoes')
+      this.$modal.hide('modalAssinouPessoaFisica')
+        }    
 }
   
   </script>
