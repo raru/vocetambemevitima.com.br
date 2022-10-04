@@ -144,8 +144,8 @@ export default {
       this.spanish = true 
     },
     mounted() {
-      this.$modal.hide('modalAssinouOrganizacoes')
-      this.$modal.hide('modalAssinouPessoaFisica')
+      $modal.hide('modalAssinouOrganizacoes')
+      $modal.hide('modalAssinouPessoaFisica')
         }
   },
   components: {
