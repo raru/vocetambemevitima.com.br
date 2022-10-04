@@ -143,13 +143,9 @@ export default {
       this.english = false 
       this.spanish = true 
     },
-    hideModal () {
-      this.$modal.hide('modalAssinouOrganizacoes'),
-      this.$modal.hide('modalAssinouPessoaFisica')
-    },    
     mounted() {
-        this.hideModal()
-        // this.data.isHidden=true 
+      this.$modal.hide('modalAssinouOrganizacoes')
+      this.$modal.hide('modalAssinouPessoaFisica')
         }
   },
   components: {
