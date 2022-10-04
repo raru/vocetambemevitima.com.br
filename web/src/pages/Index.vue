@@ -78,12 +78,12 @@ class=link-assinou
 
 </div>
 
-<modal class="modalAssina" name="modalAssinouPessoaFisica" @opened="opened" 
+<modal class="modalAssina" name="modalAssinouPessoaFisica" v-if="isShowModal"
          :width="800"
          :height="600"
          shiftY="0.8"
          >  <assinaturas-pessoas />    </modal>
-<modal class="modalAssina" name="modalAssinouOrganizacoes" @opened="opened" 
+<modal class="modalAssina" name="modalAssinouOrganizacoes" v-if="isShowModal"
          :width="800"
          :height="600"
          shiftY="0.9"
@@ -118,9 +118,10 @@ export default {
     data() {
       return {
         // isHidden: false,
+        isShowModal: true,
         portugues: true,
-        	    english: false,
-					    spanish: false  
+        english: false,
+				spanish: false  
       }
     },
 
@@ -152,12 +153,11 @@ export default {
       this.spanish = true 
     },
 
-    opened (event) {
+    mounted() {
       console.log('Opening...')
       this.$modal.hide('modalAssinouPessoaFisica')
-      this.$modal.hide('modalAssinouOrganizacoes')
-      event.cancel()
-    }
+      this.$modal.hide('modalAssinouOrganizacoes')      
+    },
 
             
   }
