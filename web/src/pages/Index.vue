@@ -206,7 +206,7 @@ export default {
       name: 'modalAssinouPessoaFisica',
       name: 'modalAssinouOrganizacoes'    
     },
-    mount () {
+    mounted () {
         this.$modal.hideAll()
     }
   }
