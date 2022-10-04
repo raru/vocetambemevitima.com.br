@@ -1,7 +1,7 @@
 <template>
   <Layout :show-logo="true">
   <center><img alt="Você também é vítima" src="../assets/images/headersite.png" class="logo"></center>
-  <br/><br/><br/><br/>
+  <br/><br/>
 <span id="manifesto"></span>
 <center><strong><a href="#"  @click="pt">Português</a> | <a href="#"  @click="en">English</a> | <a href="#" @click="sp">Spanish</a> </strong></center>
 <br/>
@@ -11,7 +11,7 @@
 <h1 v-if="english">english</h1>
 <h1 v-if="spanish">spanish</h1>
 
-<div v-if="portugues">
+<div id="manifesto" class="manifestoDiv" v-if="portugues">
 <p><br/>Chegou o momento da Plataforma Brasileira de Políticas sobre Drogas, a partir de sua rede de organizações membras, conselheiros consultivos e parceiros, e em parceria com a Iniciativa Negra por Uma Nova Política sobre Drogas, lançar ao mais amplo público a Agenda Emergencial pelo Fim da Guerra às Drogas no Brasil. <br/><br/>Neste momento de disputa eleitoral das instituições democráticas no país, nos posicionamos pela interrupção imediata da opção de guerra que tem tido como consequências o super encarceramento de pessoas pretas e a criminalização de territórios empobrecidos do norte ao sul do Brasil. A guerra tem que parar já! <br/><br/>Nos últimos meses conversamos com associações nacionais e internacionais da saúde, da segurança, da justiça, dos direitos humanos, do campo e da cidade; com os principais núcleos e centros de estudos científicos internacionalmente reconhecidos pelo seu acúmulo na temática de drogas e que estão presentes em universidades públicas e privadas do nosso país; com trabalhadoras e trabalhadores das redes de cuidado, justiça e garantia de direitos, que têm visto a política pública de atenção e cuidado ser completamente sucateada e desmontada; com movimentos, coletivos e lideranças, sobretudo mães de vítimas, residentes dos territórios mais atingidos pela opção bárbara, ineficaz e insustentável da guerra. Apresentamos neste texto-manifesto uma agenda orgânica, que é fruto de uma longa pactuação com esses diferentes setores sociais mobilizados pela nossa rede.<br/><br/>Nós somos pessoas que usam drogas, cientistas e acadêmicas, trabalhadoras de serviços, movimentos sociais, pessoas em situação de rua, coletivos culturais, e integramos um campo político com corações solidários e mentes brilhantes que ousam imaginar, experimentar, formular e acompanhar as mudanças das políticas sobre drogas no Brasil e no mundo há muitos anos.<br/><br/>Na guerra às drogas, você também é vítima! A opção político ideológica da proibição de algumas drogas resultou em uma forte indústria internacional ilegal, que ocorre sem nenhuma regulamentação, sobrevivendo mediante grandes esquemas de corrupção financeira de instituições públicas para manutenção de seus negócios. Ela não tem nenhum apreço ou cuidado com a vida das pessoas, sobretudo àquelas mais pobres e vulneráveis, impactadas pelas inúmeras violências provocadas por essa política. <br/><br/>Além dessas ameaças causadas pelas atividades criminosas, ao optar pela manutenção da guerra às drogas, direcionamos o investimento do orçamento público da União, de Estados e Municípios para políticas ineficazes em áreas estratégicas como Justiça, Segurança, Saúde e Assistência Social, que impactam também na sua vida, independente se você usa ou não drogas.<br/>
 <br/>É preciso desinterditar o debate sobre as consequências desta opção e recompor o investimento público de modo a resolver no curto, médio e longo prazo a questão da produção, da circulação e do consumo de substâncias a partir de boas práticas sociais, ambientais, de saúde e justiça, explorando as experiências comprovadamente recomendadas na América Latina e no mundo.<br/>
 <br/>É preciso interromper a agenda de morte financiada pela Guerra às Drogas, direcionando os esforços públicos para uma agenda de promoção de direitos capaz de reverter as desigualdades produzidas por décadas de guerra. Essa política não é mais uma opção para nós. A Democracia está em risco e não podemos e nem queremos mais ser as vítimas que pagam a conta da atual política de drogas, pois investir na guerra significa não optar por comida, educação pública e de qualidade, investimento em ideias criativas, cultura, geração de emprego e renda etc. <br/>
@@ -183,6 +183,11 @@ beforeOpen (event) {
 
 
 <style lang="scss" >
+
+.manifestoDiv {
+    max-width: 1200px;
+    margin: auto;
+}
 
 #botoes {
   width: 30%;

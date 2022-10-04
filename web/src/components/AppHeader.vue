@@ -6,7 +6,7 @@
           <li><a href="index.html#manifesto">Conheça a Agenda </a></li>
           <li><a href="vozes">Vozes pelo fim da guerra às drogas</a></li>
           <li><a href="namidia">Na mídia</a></li>
-          <li><a href="index.html#assine">Assine o manifesto</a></li>
+          <li><a href="index.html#assine" class="btnAssine">Assine o manifesto</a></li>
         </ul>
       </nav>    
     </header>
@@ -16,7 +16,12 @@
   
   
   <style scoped>
-  
+.btnAssine {
+    background: var(--link-color);
+    color: #d7ee01;
+    padding: 5px;
+}
+
   header {
       display: flex;
       border-bottom: 1px solid #ccc;
