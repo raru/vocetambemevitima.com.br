@@ -154,8 +154,8 @@ export default {
 
     beforeOpen (event) {
       console.log('Opening...')
-      this.$modal.hide('modalAssinouPessoaFisica')
-      $modal.hideAll()
+      $modal.hide('modalAssinouPessoaFisica')
+      $modal.hide('modalAssinouOrganizacoes')
       event.cancel()
     }
 
