@@ -16,7 +16,8 @@ module.exports = {
   siteName: 'Você Também é Vítima',
   siteDescription:
     'Chegou o momento da Plataforma Brasileira de Políticas sobre Drogas, a partir de sua rede de organizações membras, conselheiros consultivos e parceiros, e em parceria com a Iniciativa Negra por Uma Nova Política sobre Drogas, lançar ao mais amplo público a Agenda Emergencial pelo Fim da Guerra às Drogas no Brasil.    ',
-
+    siteUrl: 'https://vocetambemevitima.com.br',
+    pathPrefix: '/web/dist/',
   templates: {
     SanityPost: '/:slug__current'
   },
