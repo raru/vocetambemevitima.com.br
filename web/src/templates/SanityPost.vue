@@ -8,11 +8,11 @@
 
     <div class="post content-box">
       <div class="post__header">
-        <img
+        <!-- <img
           alt="Cover image"
           v-if="$page.post.mainImage"
           :src="$urlForImage($page.post.mainImage, $page.metadata.sanityOptions).width(600).auto('format').url()"
-        />
+        /> -->
       </div>
 
       Autor: <block-content
@@ -36,26 +36,26 @@
 
 <script>
 import BlockContent from '~/components/BlockContent'
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import AuthorCard from '~/components/AuthorCard'
+// import PostMeta from '~/components/PostMeta'
+// import PostTags from '~/components/PostTags'
+// import AuthorCard from '~/components/AuthorCard'
 
 export default {
   components: {
-    AuthorCard,
-    PostMeta,
-    PostTags,
+    // AuthorCard,
+    // PostMeta,
+    // PostTags,
     BlockContent
   },
   metaInfo() {
     return {
       title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
-        }
-      ]
+      // meta: [
+      //   {
+      //     name: 'description',
+      //     content: this.$page.post.description
+      //   }
+      // ]
     }
   }
 }

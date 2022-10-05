@@ -52,13 +52,13 @@ export default {
 
 // @font-face {
 //   font-family: VotorantimSans-Regular;
-//   src: url("./assets/images/fonts/VotorantimSans-Regular.ttf") format("opentype");
+//   src: url("../assets/images/fonts/VotorantimSans-Regular.ttf") format("opentype");
 // }
 
 // @font-face {
 //   font-family: VotorantimSans-Bold;
 //   font-weight: bold;
-//   src: url("./assets/images/fonts/VotorantimSans-Bold.ttf") format("opentype");
+//   src: url("../assets/images/fonts/VotorantimSans-Bold.ttf") format("opentype");
 // }
 
 // * {padding: 0; margin: 0}

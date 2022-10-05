@@ -32,7 +32,11 @@ module.exports = {
         overlayDrafts: !isProd,
         watchMode: !isProd
       }
-    }
+    },
+
+    {
+      use: 'gridsome-plugin-modal'
+    }    
     /* {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
