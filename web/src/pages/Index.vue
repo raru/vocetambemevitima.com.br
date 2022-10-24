@@ -1,6 +1,6 @@
 <template>
   <Layout :show-logo="true">
-  <center><img alt="Você também é vítima" src="../assets/images/headersite.png" class="logo"></center>
+  <center><img alt="Você também é vítima" src="../assets/images/homepage1.png" class="logo"></center>
   <br/><br/>
 <span id="manifesto"></span>
 <center><strong><a href="#"  @click="pt">Português</a> | <a href="#"  @click="en">English</a> | <a href="#" @click="sp">Spanish</a> </strong></center>
