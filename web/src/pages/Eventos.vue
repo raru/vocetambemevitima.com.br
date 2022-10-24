@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="m-50">Eventos</h1>
+    <h1 class="m-50">Eventos pelo Fim da Guerra às Drogas</h1>
 
     <!-- Author intro -->
     <!-- <author-card :show-title="true" /> -->
@@ -56,7 +56,6 @@ IMG_1096.JPG- Maria Marighella, vereadora de Salvador.
 
 <script>
 export default {
-  components: {
   metaInfo: {
     title: 'Eventos pelo Fim da Guerra às Drogas'
   }
