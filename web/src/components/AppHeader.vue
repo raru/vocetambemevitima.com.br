@@ -30,7 +30,7 @@
       padding: .5rem 1rem;
       background: #d7ee01;
       color: white;    
-      padding: 2vh 9vw;
+      padding: 2vh 4vw;
     }
   
   .logo { height: 64px;}  
