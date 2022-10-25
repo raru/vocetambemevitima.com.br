@@ -176,7 +176,7 @@ footer {    padding: 5%;}
     </head>
     <body>
         <main>
-<img src="hotsite-img/headersite.png" class="header-image" />
+<img src="hotsite-img/homepage1.png" class="header-image" />
         <!--<nav class="navigation">-->
         <!--                <img src="hotsite-img/logo_IN.png" height="75px" />-->
         <!--                <img src="hotsite-img/logo-pbpd.png" height="95px" />-->
