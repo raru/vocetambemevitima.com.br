@@ -117,6 +117,7 @@ The Haxixinas Club<br/>
 UNALGBT<br/>
 UNEGRO<br/>
 Yerba Tabaco<br/>
+</p>
 <br/><br/>
 <h3>Organizações Regionais</h3>
 <p class="coluna">
