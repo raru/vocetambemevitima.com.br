@@ -7,6 +7,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 // Import image url builder
 import urlForImage from './utils/urlForImage'
 
+
 // import VModal from 'vue-js-modal'
 
 
