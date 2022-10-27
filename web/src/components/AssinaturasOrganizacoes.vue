@@ -201,7 +201,7 @@ Zarabatanainfo - Ciberativistas Negras Amazônidas<br/>
 }
 
 .v--modal p {
-    font-size: 9px !important;
+    font-size: 12px !important;
     color: #fff; 
 }
 </style>

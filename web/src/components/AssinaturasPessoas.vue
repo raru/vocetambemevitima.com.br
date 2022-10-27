@@ -902,7 +902,7 @@ import page from '../../../studio/schemas/documents/page';
 }
 
 .v--modal p {
-    font-size: 9px !important;
+    font-size: 12px !important;
     color: #fff; 
 }
 
