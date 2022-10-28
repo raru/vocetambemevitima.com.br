@@ -17,7 +17,8 @@
     "sanity-blocks-vue-component": "^0.1.0",
     "sharp": "^0.29.1",
     "vue-cool-lightbox": "^2.7.5",
-    "vue-silentbox": "^2.4.6"
+    "vue-silentbox": "^2.4.6",
+    "vueperslides": "^3.5.1"
   },
   "devDependencies": {
     "sass": "^1.42.1",

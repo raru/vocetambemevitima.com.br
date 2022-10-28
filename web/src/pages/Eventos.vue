@@ -180,9 +180,7 @@
 
 
 <figure><a ref="fotos/salvador/IMG_0014.jpg"  data-lightbox="roadtrip"> <img width="300px" src="fotos/salvador/GON_0589.JPG" /><figcaption> Cineclube Pico da Neblina na Sala de Arte do Museu. </figcaption></a></figure>
-
 <figure><a ref="fotos/salvador/IMG_0014.jpg"  data-lightbox="roadtrip"> <img width="300px" src="fotos/salvador/GON_0633.JPG" /><figcaption>Cineclube Pico da Neblina na Sala de Arte do Museu. </figcaption></a></figure>
-
 <figure><a ref="fotos/salvador/IMG_0014.jpg"  data-lightbox="roadtrip"> <img width="300px" src="fotos/salvador/GON_0667.JPG" /><figcaption> Sessão com exibição do primeiro episódio da série “Pico da Neblina” (HBO)</figcaption></a></figure>
 
 <figure><a ref="fotos/salvador/IMG_0014.jpg"  data-lightbox="roadtrip"> <img width="300px" src="fotos/salvador/GON_0673.JPG" /><figcaption>Sessão com exibição do primeiro episódio da série “Pico da Neblina” (HBO)</figcaption></a></figure>
@@ -215,12 +213,20 @@
 <div style="clear:both;"></div>
 <hr style=" margin: 50px 0; border: none;" />
 
+
+
+
+
+
+
+
   </Layout>
 </template>
 <script>
 
-export default {
 
+
+export default {
   metaInfo: {
     title: 'Eventos pelo Fim da Guerra às Drogas'
   }
@@ -228,6 +234,8 @@ export default {
 </script>
 
 <style>
+
+
 figcaption {
   font-size: 9px !important;
   text-decoration: none !important;
