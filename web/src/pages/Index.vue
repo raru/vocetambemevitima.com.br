@@ -1,7 +1,11 @@
 <template>
   <Layout :show-logo="true">
-    <center><img alt="Você também é vítima" src="../assets/images/homepage1.png" class="logo"></center>
+    <center><iframe width="100%" height="640" src="https://www.youtube.com/embed/vwA8NcwZ0wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
   <br/><br/>
+  
+  <center><img alt="Você também é vítima" src="../assets/images/homepage1.png" class="logo"></center>
+  <br/><br/>
+
 <span id="manifesto"></span>
 <center><strong><a href="#"  @click="pt">Português</a> | <a href="#"  @click="en">English</a> | <a href="#" @click="sp">Spanish</a> </strong></center>
 <br/>
@@ -248,7 +252,7 @@ h2 { color: #d7ee01; font-size: 18px !important;}
 }
 
 .v--modal p {
-    font-size: 9px !important;
+    font-size: 11px !important;
     color: #fff !important; 
 }
 
