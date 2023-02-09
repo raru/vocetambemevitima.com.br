@@ -1,15 +1,15 @@
 <template>
   <Layout>
 
-    
-    <h1 class="mt-50" >Agenda dos cem dias</h1>
-    <h3>PROPOSTAS PARA OS PRIMEIROS 100 DIAS DE GOVERNO</h3>
+    <center>
+    <h1 class="m-50" >Agenda dos cem dias</h1>
+    <strong>PROPOSTAS PARA OS PRIMEIROS 100 DIAS DE GOVERNO</strong>
     <!-- Author intro -->
     <!-- <author-card :show-title="true" /> -->
 
-<center>
+
 <strong>Conheça as propostas da nossa campanha para os primeiros cem dias de governo</strong><br/>
-<h2>Política de drogas e redução de homicídios</h2>
+<strong>Política de drogas e redução de homicídios</strong>
 <p><br/><strong>APRESENTAÇÃO</strong><br/>
 Propostas construídas a partir do diálogo e consulta com mili- tantes, pesquisadores e OSCs do campo dos Direitos Humanos (política de drogas, segurança pública e justiça criminal). Organi- zadas e apresentadas por temas, orientados para as responsa- bilidades atribuídas ao governo executivo federal, embora parte das ações demandem diálogo e articulação com o legislativo federal e sistema de justiça.<br/>
 Boa parte das propostas possui respaldo, aparato legal e lastro quanto à sua factibilidade, enquanto outras podem parecer in- teiramente novas ao Estado Brasileiro, embora essenciais para a reforma na política de drogas e urgente redução de homicídios no País.
@@ -49,11 +49,11 @@ por delitos relacionados a drogas e também os adolescentes e crianças apreendi
 • Ampliação do fomento a programas de pós-graduação Stricto Sensu (mestrado e doutorado) sobre Política de Drogas, Direitos Humanos e Redução de Danos.<br/><br/>
 </p>
 <p>
-<h2>SOBRE A PBPD</h2><br/>
+<strong>SOBRE A PBPD</strong><br/>
 A Plataforma Brasileira de Política de Drogas (PBPD) é uma rede nacional que busca debater e promover políticas de drogas fundamentadas na garantia dos direitos humanos e em evidências científicas, na redução dos danos produzidos pelo uso problemático de drogas e pela violência associada à ilegalidade de sua circulação, bem como na promoção da educação e da saúde pública.
 A PBPD estimula políticas que garantam a autonomia e a cidadania das pessoas que usam drogas e o efetivo direito à saúde e ao tratamento em liberdade.<br/>
 <br/><br/>
-<h2>SOBRE A INICIATIVA NEGRA POR UMA NOVA POLÍTICA SOBRE DROGAS</h2><br/>
+<strong>SOBRE A INICIATIVA NEGRA POR UMA NOVA POLÍTICA SOBRE DROGAS</strong><br/>
 A Iniciativa Negra por uma Nova Política sobre Drogas é uma organização da sociedade civil que atua, desde 2015, pela construção de uma agenda de justiça racial e econômica promovendo ações de advocacy em Direitos Humanos e propondo reformas na atual política de combate às drogas.
 </p>
 <br/><strong>
