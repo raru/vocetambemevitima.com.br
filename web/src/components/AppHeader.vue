@@ -3,10 +3,11 @@
     <!-- <img alt="HARPI logo" src="../assets/logo_harpi-header@2x.png" class="logo"> -->
     <nav>
       <ul>
+        <li><a href="100dias">Agenda dos cem dias</a></li>
         <li><a href="index.html#manifesto">Conheça a Agenda </a></li>
         <li><a href="vozes">Vozes pelo fim da guerra às drogas</a></li>
         <li><a href="namidia">Na mídia</a></li>
-        <li><a href="eventos">Eventos pelo Fim da Guerra às Drogas</a></li>
+        <li><a href="eventos">Eventos</a></li>
         <li><a href="index.html#assine" class="btnAssine">Assine o manifesto</a></li>
       </ul>
     </nav>    
