@@ -57,8 +57,8 @@ A PBPD estimula políticas que garantam a autonomia e a cidadania das pessoas qu
 A Iniciativa Negra por uma Nova Política sobre Drogas é uma organização da sociedade civil que atua, desde 2015, pela construção de uma agenda de justiça racial e econômica promovendo ações de advocacy em Direitos Humanos e propondo reformas na atual política de combate às drogas.
 </p>
 <br/><strong>
-<a href="https://vocetambemevitima.com.br/web/dist/pdf/folder-propostas-100-dias-governo.pdf" target="_blank"> VEJA O FOLDER DA CAMPANHA</a>
-</strong>
+<a href="https://vocetambemevitima-com-br.netlify.app/pdf/folder-propostas-100-dias-governo.pdf" target="_blank"> CLIQUE E VEJA O FOLDER DA CAMPANHA</a>
+  </strong>
 </center>
 
 <div style="clear:both;"></div>
